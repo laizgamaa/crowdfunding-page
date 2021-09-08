@@ -1,0 +1,48 @@
+.pledgeContainer {
+    display: flex;
+    flex-direction: column;
+    // border: 2px solid #e1e1e1;
+    // border-radius: 5px;
+    .pledgeCard {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        border: 2px solid #e1e1e1;
+        border-radius: 5px;
+        .pledgeHeader {
+            display: grid;
+            grid-template-columns: 1fr 10rem 6rem;        
+            .title {
+                font-weight: 700;
+            }
+            .pledge {
+                color: var(--moderate-cyan);
+            }
+            .amountLeft {
+                font-size: 1.1rem;
+                align-items: center;
+                strong {
+                    margin-right: .6rem;
+                }
+            }
+        }
+        .radio {
+            label {
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .finishButton {
+        background: var(--moderate-cyan);
+        color: var(--white);
+        float: right;
+    }
+
+    // .finishButton:disabled {
+    //     background: var(--white);
+    //     color: var(--dark-grey);
+    //     cursor: not-allowed;
+    // }
+}

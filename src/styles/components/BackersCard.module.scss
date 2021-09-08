@@ -1,0 +1,51 @@
+.backersCardContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--white);
+    text-align: center;
+    padding: 2rem 4rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    width: 60vw;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    @media screen and (max-width: 480px) {
+        width: 100vw;
+    }
+    .amountList {
+        display: flex;
+        justify-content: space-between;
+        .singleAmount {
+            text-align: left;
+            .totalNumber {
+                font-size: 1.6rem;
+                font-weight: 700;
+            }
+            .label {
+                color: var(--dark-gray);
+            }
+            span {
+                display: block;
+            }
+        }
+    }
+    .progressBar {
+        display: flex;
+        align-items: center;
+        span {
+            font-size: 1rem;
+        }    
+        .completeBar {
+            flex: 1;
+            height: 12px;
+            border-radius: 8px;
+            background: #e1e1e1;
+            position: relative;
+            .barInProgress {
+                height: 12px;
+                border-radius: 8px;
+                background: var(--moderate-cyan);
+            }
+        }
+    }
+}

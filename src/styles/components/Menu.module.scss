@@ -1,0 +1,21 @@
+.menuContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    padding: 2rem 8rem;
+    width: 100%;
+    .logo {
+        img {
+            width: 150px;
+        }
+    }
+    .menuList {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        .menuItem {
+            color: var(--white);
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.rewardsList {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    .rewardContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        border: 2px solid #e1e1e1;
+        border-radius: 5px;
+        .rewardHeader {
+            display: flex;
+            justify-content: space-between;
+            .title {
+                font-weight: 700;
+            }
+            .pledge {
+                color: var(--moderate-cyan);
+            }
+        }
+        .rewardFooter {
+            display: flex;
+            justify-content: space-between;
+            span {
+                font-size: 1.1rem;
+                align-items: center;
+                strong {
+                    font-size: 2rem;
+                    margin-right: .8rem;
+                }
+            }
+            .selectButton {
+                background: var(--moderate-cyan);
+                color: var(--white);
+            }
+        }
+    }
+}
